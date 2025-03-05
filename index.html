@@ -1,37 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internship Opportunities</title>
-</head>
-<body>
-    <h1>✨ Internship Opportunities ✨</h1>
-    
-    <h2>3. Short term mobilities:</h2>
-    <ul>
-        <li>✈ Erasmus staff mobility</li>
-        <li>✈ Short term students mobility</li>
-    </ul>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Amber Job - Erasmus Internships</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Sidebar Styles */
+			#sidebar {
+				position: fixed;
+				top: 0;
+				right: -250px; /* Initially hidden on the right */
+				width: 250px;
+				height: 100%;
+				background: #333;
+				color: white;
+				padding: 20px;
+				transition: right 0.3s ease-in-out;
+				z-index: 1000;
+			}
 
-    <h2>4. Discover:</h2>
-    <p>✨ <a href="https://absoluteinternship.com/alumni/">Alumni stories</a></p>
-    <p>☀️ Dreaming of an unforgettable summer in paradise? With <strong>Amber Job</strong> agency, you can kickstart your career in the tourism industry through adventurous internships in Greece and Cyprus!</p>
-    <p>Why Amber Job?</p>
-    <ul>
-        <li>✅ Access to exclusive internship placements in 4-5 star hotels, famous entertainment companies and luxury SPA centers.</li>
-        <li>✅ Valuable training to equip you with valuable skills.</li>
-        <li>✅ Build a global network while making lifelong friends from diverse backgrounds!</li>
-    </ul>
-    <p>🌍 Join our past interns who have explored breathtaking landscapes and gained invaluable experience in hospitality and entertainment. Your adventure awaits!</p>
+			#sidebar.active {
+				right: 0; /* When active, show sidebar */
+			}
 
-    <h2>5. Partnerships:</h2>
-    <ul>
-        <li>🎓 Universities</li>
-        <li>💼 Host companies</li>
-    </ul>
+			#sidebar ul {
+				list-style: none;
+				padding: 0;
+			}
 
-    <h2>6. Apply Now:</h2>
-    <p>📞 Contact details of the company and email</p>
-</body>
+			#sidebar ul li {
+				margin: 15px 0;
+			}
+
+			#sidebar ul li a {
+				color: white;
+				text-decoration: none;
+				font-size: 18px;
+			}
+
+			#toggle-sidebar {
+				position: fixed;
+				top: 20px;
+				right: 20px;
+				background: #333;
+				color: white;
+				border: none;
+				padding: 10px 15px;
+				cursor: pointer;
+				z-index: 1100;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<button id="toggle-sidebar">☰ Menu</button>
+		<div id="sidebar">
+			<nav id="menu">
+				<header class="major">
+					<h2>Menu</h2>
+				</header>
+				<ul>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#internships">Internships</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div id="wrapper">
+			<div id="main">
+				<div class="inner">
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Amber Job</strong> - Erasmus Internships</a>
+					</header>
+					<section id="about">
+						<header class="major">
+							<h2>About Us</h2>
+						</header>
+						<p>We are one of the leading consulting agencies in Europe for the past 10 years, facilitating internships for more than 3000 students to wonderful destinations. If you have been looking for an opportunity to travel and develop professionally, Amber Job is here to help you.</p>
+					</section>
+
+					<section id="internships">
+						<header class="major">
+							<h2>Erasmus Internships</h2>
+						</header>
+					</section>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			document.getElementById("toggle-sidebar").addEventListener("click", function() {
+				document.getElementById("sidebar").classList.toggle("active");
+			});
+		</script>
+	</body>
 </html>
