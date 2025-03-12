@@ -50,29 +50,35 @@
 				cursor: pointer;
 				z-index: 1100;
 			}
+
+			/* Footer Styles */
+			#footer {
+				text-align: center;
+				padding: 20px;
+				background: #222;
+				color: white;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
-		<div id="wrapper">
-				<!-- Sidebar -->
-			<div id="sidebar">
-				<div class="inner">
-
-					<!-- Menu -->
-					<nav id="menu">
-						<header class="major">
-							<h2>Menu</h2>
-						</header>
-						<ul>
-							<li><a href="#about">About Us</a></li>
-							<li><a href="#internships">Internships</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</nav>
-
-				</div>
-			</div>
-	
+		<button id="toggle-sidebar">☰ Menu</button>
+		<div id="sidebar">
+			<nav id="menu">
+				<header class="major">
+					<h2>Menu</h2>
+				</header>
+				<ul>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#internships">Internships</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+                <div id="wrapper">
 			<div id="main">
 				<div class="inner">
 					<header id="header">
@@ -166,7 +172,7 @@
 				</section>
 			</div>
 		</div>
-			<footer id="footer">
+		<footer id="footer">
 			<p class="copyright">Template by <a href="https://html5up.net">HTML5 UP</a> - Editorial</p>
 		</footer>
 
